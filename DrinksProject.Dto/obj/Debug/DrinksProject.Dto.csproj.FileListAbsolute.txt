@@ -1,0 +1,4 @@
+C:\Users\Joaop\Documents\Visual Studio 2012\Projects\DrinksProject\DrinksProject.Dto\bin\Debug\DrinksProject.Dto.dll
+C:\Users\Joaop\Documents\Visual Studio 2012\Projects\DrinksProject\DrinksProject.Dto\bin\Debug\DrinksProject.Dto.pdb
+C:\Users\Joaop\Documents\Visual Studio 2012\Projects\DrinksProject\DrinksProject.Dto\obj\Debug\DrinksProject.Dto.dll
+C:\Users\Joaop\Documents\Visual Studio 2012\Projects\DrinksProject\DrinksProject.Dto\obj\Debug\DrinksProject.Dto.pdb

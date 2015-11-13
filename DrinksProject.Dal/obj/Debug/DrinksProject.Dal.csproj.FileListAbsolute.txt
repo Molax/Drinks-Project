@@ -1,0 +1,9 @@
+C:\Users\Joaop\Documents\Visual Studio 2012\Projects\DrinksProject\DrinksProject.Dal\bin\Debug\DrinksProject.Dal.dll
+C:\Users\Joaop\Documents\Visual Studio 2012\Projects\DrinksProject\DrinksProject.Dal\bin\Debug\DrinksProject.Dal.pdb
+C:\Users\Joaop\Documents\Visual Studio 2012\Projects\DrinksProject\DrinksProject.Dal\bin\Debug\DrinksProject.Data.dll
+C:\Users\Joaop\Documents\Visual Studio 2012\Projects\DrinksProject\DrinksProject.Dal\bin\Debug\DrinksProject.Dto.dll
+C:\Users\Joaop\Documents\Visual Studio 2012\Projects\DrinksProject\DrinksProject.Dal\bin\Debug\DrinksProject.Data.pdb
+C:\Users\Joaop\Documents\Visual Studio 2012\Projects\DrinksProject\DrinksProject.Dal\bin\Debug\DrinksProject.Dto.pdb
+C:\Users\Joaop\Documents\Visual Studio 2012\Projects\DrinksProject\DrinksProject.Dal\obj\Debug\DrinksProject.Dal.csprojResolveAssemblyReference.cache
+C:\Users\Joaop\Documents\Visual Studio 2012\Projects\DrinksProject\DrinksProject.Dal\obj\Debug\DrinksProject.Dal.dll
+C:\Users\Joaop\Documents\Visual Studio 2012\Projects\DrinksProject\DrinksProject.Dal\obj\Debug\DrinksProject.Dal.pdb
