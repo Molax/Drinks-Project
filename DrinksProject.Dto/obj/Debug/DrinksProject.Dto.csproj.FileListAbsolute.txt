@@ -2,3 +2,8 @@ C:\Users\Joaop\Documents\Visual Studio 2012\Projects\DrinksProject\DrinksProject
 C:\Users\Joaop\Documents\Visual Studio 2012\Projects\DrinksProject\DrinksProject.Dto\bin\Debug\DrinksProject.Dto.pdb
 C:\Users\Joaop\Documents\Visual Studio 2012\Projects\DrinksProject\DrinksProject.Dto\obj\Debug\DrinksProject.Dto.dll
 C:\Users\Joaop\Documents\Visual Studio 2012\Projects\DrinksProject\DrinksProject.Dto\obj\Debug\DrinksProject.Dto.pdb
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Dto\bin\Debug\DrinksProject.Dto.dll
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Dto\bin\Debug\DrinksProject.Dto.pdb
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Dto\obj\Debug\DrinksProject.Dto.csprojResolveAssemblyReference.cache
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Dto\obj\Debug\DrinksProject.Dto.dll
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Dto\obj\Debug\DrinksProject.Dto.pdb

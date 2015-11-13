@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 
-namespace DrinksProject.Web
+namespace AppOnTime.Web
 {
     public class FilterConfig
     {

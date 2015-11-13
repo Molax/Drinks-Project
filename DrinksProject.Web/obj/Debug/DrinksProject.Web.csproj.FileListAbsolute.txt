@@ -1,30 +1,66 @@
-C:\Users\Joaop\Documents\Visual Studio 2012\Projects\DrinksProject\DrinksProject.Web\bin\DrinksProject.Web.dll
-C:\Users\Joaop\Documents\Visual Studio 2012\Projects\DrinksProject\DrinksProject.Web\bin\DrinksProject.Web.pdb
-C:\Users\Joaop\Documents\Visual Studio 2012\Projects\DrinksProject\DrinksProject.Web\bin\Antlr3.Runtime.dll
-C:\Users\Joaop\Documents\Visual Studio 2012\Projects\DrinksProject\DrinksProject.Web\bin\DrinksProject.Bll.dll
-C:\Users\Joaop\Documents\Visual Studio 2012\Projects\DrinksProject\DrinksProject.Web\bin\DrinksProject.ViewModel.dll
-C:\Users\Joaop\Documents\Visual Studio 2012\Projects\DrinksProject\DrinksProject.Web\bin\EntityFramework.dll
-C:\Users\Joaop\Documents\Visual Studio 2012\Projects\DrinksProject\DrinksProject.Web\bin\Microsoft.Web.Infrastructure.dll
-C:\Users\Joaop\Documents\Visual Studio 2012\Projects\DrinksProject\DrinksProject.Web\bin\Newtonsoft.Json.dll
-C:\Users\Joaop\Documents\Visual Studio 2012\Projects\DrinksProject\DrinksProject.Web\bin\System.Web.Helpers.dll
-C:\Users\Joaop\Documents\Visual Studio 2012\Projects\DrinksProject\DrinksProject.Web\bin\System.Web.Mvc.dll
-C:\Users\Joaop\Documents\Visual Studio 2012\Projects\DrinksProject\DrinksProject.Web\bin\System.Web.Optimization.dll
-C:\Users\Joaop\Documents\Visual Studio 2012\Projects\DrinksProject\DrinksProject.Web\bin\System.Web.Providers.dll
-C:\Users\Joaop\Documents\Visual Studio 2012\Projects\DrinksProject\DrinksProject.Web\bin\System.Web.Razor.dll
-C:\Users\Joaop\Documents\Visual Studio 2012\Projects\DrinksProject\DrinksProject.Web\bin\System.Web.WebPages.Deployment.dll
-C:\Users\Joaop\Documents\Visual Studio 2012\Projects\DrinksProject\DrinksProject.Web\bin\System.Web.WebPages.dll
-C:\Users\Joaop\Documents\Visual Studio 2012\Projects\DrinksProject\DrinksProject.Web\bin\System.Web.WebPages.Razor.dll
-C:\Users\Joaop\Documents\Visual Studio 2012\Projects\DrinksProject\DrinksProject.Web\bin\WebGrease.dll
-C:\Users\Joaop\Documents\Visual Studio 2012\Projects\DrinksProject\DrinksProject.Web\bin\DrinksProject.Bll.pdb
-C:\Users\Joaop\Documents\Visual Studio 2012\Projects\DrinksProject\DrinksProject.Web\bin\DrinksProject.ViewModel.pdb
-C:\Users\Joaop\Documents\Visual Studio 2012\Projects\DrinksProject\DrinksProject.Web\bin\EntityFramework.xml
-C:\Users\Joaop\Documents\Visual Studio 2012\Projects\DrinksProject\DrinksProject.Web\bin\Newtonsoft.Json.xml
-C:\Users\Joaop\Documents\Visual Studio 2012\Projects\DrinksProject\DrinksProject.Web\bin\System.Web.Helpers.xml
-C:\Users\Joaop\Documents\Visual Studio 2012\Projects\DrinksProject\DrinksProject.Web\bin\System.Web.Mvc.xml
-C:\Users\Joaop\Documents\Visual Studio 2012\Projects\DrinksProject\DrinksProject.Web\bin\System.Web.Razor.xml
-C:\Users\Joaop\Documents\Visual Studio 2012\Projects\DrinksProject\DrinksProject.Web\bin\System.Web.WebPages.xml
-C:\Users\Joaop\Documents\Visual Studio 2012\Projects\DrinksProject\DrinksProject.Web\bin\System.Web.WebPages.Deployment.xml
-C:\Users\Joaop\Documents\Visual Studio 2012\Projects\DrinksProject\DrinksProject.Web\bin\System.Web.WebPages.Razor.xml
-C:\Users\Joaop\Documents\Visual Studio 2012\Projects\DrinksProject\DrinksProject.Web\obj\Debug\DrinksProject.Web.csprojResolveAssemblyReference.cache
-C:\Users\Joaop\Documents\Visual Studio 2012\Projects\DrinksProject\DrinksProject.Web\obj\Debug\DrinksProject.Web.dll
-C:\Users\Joaop\Documents\Visual Studio 2012\Projects\DrinksProject\DrinksProject.Web\obj\Debug\DrinksProject.Web.pdb
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\obj\Debug\DrinksProject.Web.csprojResolveAssemblyReference.cache
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\obj\Debug\AppOnTime.Web.dll
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\obj\Debug\AppOnTime.Web.pdb
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\bin\AppOnTime.Web.dll
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\bin\AppOnTime.Web.pdb
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\bin\Antlr3.Runtime.dll
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\bin\EntityFramework.dll
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\bin\Microsoft.Data.Edm.dll
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\bin\Microsoft.Data.OData.dll
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\bin\Newtonsoft.Json.dll
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\bin\System.Spatial.dll
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\bin\System.Web.Helpers.dll
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\bin\System.Web.Http.dll
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\bin\System.Web.Http.OData.dll
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\bin\System.Web.Http.Tracing.dll
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\bin\System.Web.Mvc.dll
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\bin\System.Web.Optimization.dll
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\bin\System.Web.Providers.dll
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\bin\System.Web.Razor.dll
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\bin\System.Web.WebPages.dll
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\bin\System.Web.WebPages.Razor.dll
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\bin\WebGrease.dll
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\bin\EntityFramework.xml
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\bin\Newtonsoft.Json.xml
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\bin\System.Web.Helpers.xml
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\bin\System.Web.Http.xml
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\bin\System.Web.Mvc.xml
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\bin\System.Web.Razor.xml
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\bin\System.Web.WebPages.xml
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\bin\System.Web.WebPages.Razor.xml
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\bin\System.Web.Http.Tracing.xml
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\bin\System.Web.Http.OData.xml
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\bin\Microsoft.Data.Edm.xml
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\bin\Microsoft.Data.OData.xml
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\bin\System.Spatial.xml
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\bin\de\Microsoft.Data.OData.resources.dll
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\bin\es\Microsoft.Data.OData.resources.dll
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\bin\it\Microsoft.Data.OData.resources.dll
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\bin\de\System.Spatial.resources.dll
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\bin\es\System.Spatial.resources.dll
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\bin\fr\System.Spatial.resources.dll
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\bin\it\System.Spatial.resources.dll
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\bin\ja\System.Spatial.resources.dll
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\bin\ko\System.Spatial.resources.dll
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\bin\ru\System.Spatial.resources.dll
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\bin\zh-Hant\System.Spatial.resources.dll

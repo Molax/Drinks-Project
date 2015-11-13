@@ -1,13 +1,18 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace DrinksProject.Web
+namespace AppOnTime.Web
 {
     public class BundleConfig
     {
         // For more information on Bundling, visit http://go.microsoft.com/fwlink/?LinkId=254725
         public static void RegisterBundles(BundleCollection bundles)
         {
+
+
+            bundles.Add(new ScriptBundle("~/bundles/materialize").Include(
+                        "~/Scripts/materialize.min.js"));
+
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                         "~/Scripts/jquery-{version}.js"));
 
@@ -38,6 +43,7 @@ namespace DrinksProject.Web
                         "~/Content/themes/base/jquery.ui.datepicker.css",
                         "~/Content/themes/base/jquery.ui.progressbar.css",
                         "~/Content/themes/base/jquery.ui.theme.css"));
+            bundles.Add(new StyleBundle("~/Content/materialize").Include("~/Content/css/materialize.min.css"));
         }
     }
 }
