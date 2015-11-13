@@ -12,7 +12,7 @@ namespace DrinksProject.Dto
 
         public string NAME { get; set; }
 
-        public string PHOTO { get; set; }
+        public byte[] PHOTO { get; set; }
 
         public int FK_SIZE { get; set; }
 
