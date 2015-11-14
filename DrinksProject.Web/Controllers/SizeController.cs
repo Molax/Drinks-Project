@@ -7,17 +7,18 @@ using System.Web.Http;
 using DrinksProject;
 using DrinksProject.Bll;
 using DrinksProject.ViewModel;
+using System.Collections;
 
 namespace AppOnTime.Web.Controllers
 {
     public class SizeController : ApiController
     {
         [HttpPost]
-        public HttpResponseMessage SelectAllSizes()
+        public List<DrinksProject.ViewModel.SelectAllSizes> SelectAllSizes()
         {
-            DrinksProject.ViewModel.SelectAllSizes Sizes = DrinksProject.Bll.Select.SelectAllSizes();
+            List<DrinksProject.ViewModel.SelectAllSizes> Sizes = DrinksProject.Bll.Select.SelectAllSizes();
 
-            return Request.CreateResponse(HttpStatusCode.OK);
+            return Sizes;
      
         }
     }
