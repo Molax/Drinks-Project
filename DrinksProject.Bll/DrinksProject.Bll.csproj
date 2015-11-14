@@ -40,6 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Select.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DrinksProject.Dal\DrinksProject.Dal.csproj">
@@ -49,6 +50,10 @@
     <ProjectReference Include="..\DrinksProject.Dto\DrinksProject.Dto.csproj">
       <Project>{1d20ac85-4ff0-4e3a-b56d-966a1d03b2fd}</Project>
       <Name>DrinksProject.Dto</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DrinksProject.ViewModel\DrinksProject.ViewModel.csproj">
+      <Project>{78ede6cb-53d7-470d-9f53-878e3dd266de}</Project>
+      <Name>DrinksProject.ViewModel</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

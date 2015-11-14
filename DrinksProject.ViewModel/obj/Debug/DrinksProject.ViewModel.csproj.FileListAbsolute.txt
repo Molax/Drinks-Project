@@ -3,3 +3,8 @@ C:\Users\Joaop\Documents\Visual Studio 2012\Projects\DrinksProject\DrinksProject
 C:\Users\Joaop\Documents\Visual Studio 2012\Projects\DrinksProject\DrinksProject.ViewModel\obj\Debug\DrinksProject.ViewModel.csprojResolveAssemblyReference.cache
 C:\Users\Joaop\Documents\Visual Studio 2012\Projects\DrinksProject\DrinksProject.ViewModel\obj\Debug\DrinksProject.ViewModel.dll
 C:\Users\Joaop\Documents\Visual Studio 2012\Projects\DrinksProject\DrinksProject.ViewModel\obj\Debug\DrinksProject.ViewModel.pdb
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.ViewModel\bin\Debug\DrinksProject.ViewModel.dll
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.ViewModel\bin\Debug\DrinksProject.ViewModel.pdb
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.ViewModel\obj\Debug\DrinksProject.ViewModel.csprojResolveAssemblyReference.cache
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.ViewModel\obj\Debug\DrinksProject.ViewModel.dll
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.ViewModel\obj\Debug\DrinksProject.ViewModel.pdb

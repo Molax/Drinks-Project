@@ -16,3 +16,7 @@ C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Bll\bin\Debug\Drink
 C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Bll\obj\Debug\DrinksProject.Bll.csprojResolveAssemblyReference.cache
 C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Bll\obj\Debug\DrinksProject.Bll.dll
 C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Bll\obj\Debug\DrinksProject.Bll.pdb
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Bll\bin\Debug\DrinksProject.ViewModel.dll
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Bll\bin\Debug\DrinksProject.Data.dll
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Bll\bin\Debug\DrinksProject.ViewModel.pdb
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Bll\bin\Debug\DrinksProject.Data.pdb

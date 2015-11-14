@@ -64,3 +64,13 @@ C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\bin\ko\System.S
 C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\bin\ru\System.Spatial.resources.dll
 C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\bin\zh-Hans\System.Spatial.resources.dll
 C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\bin\DrinksProject.Bll.dll
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\bin\DrinksProject.ViewModel.dll
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\bin\DrinksProject.Bll.pdb
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\bin\DrinksProject.ViewModel.pdb
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\bin\DrinksProject.Dal.dll
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\bin\DrinksProject.Dto.dll
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\bin\DrinksProject.Data.dll
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\bin\DrinksProject.Dal.pdb
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\bin\DrinksProject.Dto.pdb
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Web\bin\DrinksProject.Data.pdb

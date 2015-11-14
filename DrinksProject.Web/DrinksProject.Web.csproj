@@ -165,7 +165,9 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="Controllers\DrinkController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\SizeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -307,6 +309,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Home\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DrinksProject.Bll\DrinksProject.Bll.csproj">
+      <Project>{99583dda-5458-4bac-8c26-2bdaef6d63e4}</Project>
+      <Name>DrinksProject.Bll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DrinksProject.ViewModel\DrinksProject.ViewModel.csproj">
+      <Project>{78ede6cb-53d7-470d-9f53-878e3dd266de}</Project>
+      <Name>DrinksProject.ViewModel</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

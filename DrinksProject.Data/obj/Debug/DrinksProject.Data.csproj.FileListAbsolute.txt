@@ -3,3 +3,9 @@ C:\Users\Joaop\Documents\Visual Studio 2012\Projects\DrinksProject\DrinksProject
 C:\Users\Joaop\Documents\Visual Studio 2012\Projects\DrinksProject\DrinksProject.Data\obj\Debug\DrinksProject.Data.csprojResolveAssemblyReference.cache
 C:\Users\Joaop\Documents\Visual Studio 2012\Projects\DrinksProject\DrinksProject.Data\obj\Debug\DrinksProject.Data.dll
 C:\Users\Joaop\Documents\Visual Studio 2012\Projects\DrinksProject\DrinksProject.Data\obj\Debug\DrinksProject.Data.pdb
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Data\bin\Debug\DrinksProject.Data.dll.config
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Data\bin\Debug\DrinksProject.Data.dll
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Data\bin\Debug\DrinksProject.Data.pdb
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Data\obj\Debug\DrinksProject.Data.csprojResolveAssemblyReference.cache
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Data\obj\Debug\DrinksProject.Data.dll
+C:\Users\Joaop\Documents\GitHub\Drinks-Project\DrinksProject.Data\obj\Debug\DrinksProject.Data.pdb
