@@ -9,5 +9,10 @@ namespace AppOnTime.Web.Controllers
 {
     public class DrinkController : ApiController
     {
+        [HttpPost]
+        public void CreateNewDrink(DrinksProject.ViewModel.CreateNewDrink Drink)
+        {
+            byte[] bytes = Convert.FromBase64String(Drink.PHOTO);
+        }
     }
 }

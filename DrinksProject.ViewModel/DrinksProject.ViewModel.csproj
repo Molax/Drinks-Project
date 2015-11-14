@@ -39,8 +39,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CreateNewDrink.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SelectAllSizes.cs" />
+    <Compile Include="SelectAllTypes.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DrinksProject.Dto\DrinksProject.Dto.csproj">

@@ -3,25 +3,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data.Entity;
 using DrinksProject.Data;
 
 namespace DrinksProject.Dal
 {
-    public class Size
+    public class Type
     {
-        public static List<Dto.Size> SelectAllSizes()
+        public static List<Dto.Type> SelectAllTypes()
         {
             using (var db = new DrinkDataBaseDataContext())
             {
-                return db.SIZEs.Select(c => new Dto.Size {
+                return db.TYPEs.Select(c => new Dto.Type {
                 
-                    SIZETYPE = c.SIZETYPE,
-                    PK_SIZE  = c.PK_SIZE
+                    NAME = c.NAME,
+                    PK_TYPE = c.PK_TYPE
                 
                 }).ToList();
             }
         }
-
     }
 }

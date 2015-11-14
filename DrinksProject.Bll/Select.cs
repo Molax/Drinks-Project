@@ -25,5 +25,21 @@ namespace DrinksProject.Bll
 
             return AllSizes;
         }
+
+        public static List<DrinksProject.ViewModel.SelectAllTypes> SelectAllTypes()
+        {
+            List<ViewModel.SelectAllTypes> AllTypes = new List<ViewModel.SelectAllTypes>();
+
+            List<Dto.Type> TypeDTO = new List<Dto.Type>();
+
+            TypeDTO = Dal.Type.SelectAllTypes();
+
+            foreach (var item in TypeDTO)
+            {
+                AllTypes.Add(new ViewModel.SelectAllTypes { NAME = item.NAME, PK_TYPE = item.PK_TYPE });
+            }
+
+            return AllTypes;
+        }
     }
 }
