@@ -16,5 +16,13 @@ namespace AppOnTime.Web.Controllers
 
             DrinksProject.Bll.Create.CreateNewDrink(Drink);
         }
+
+        [HttpPost]
+        public List<DrinksProject.ViewModel.SelectAllDrinks> SelectAllDrinks()
+        {
+            List<DrinksProject.ViewModel.SelectAllDrinks> Drinks =  DrinksProject.Bll.Select.SelectAllDrinks();
+
+            return Drinks;
+        }
     }
 }

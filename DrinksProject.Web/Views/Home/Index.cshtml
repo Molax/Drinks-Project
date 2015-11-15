@@ -4,9 +4,11 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Drink's Project</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.10/css/jquery.dataTables.css">
     @Styles.Render("~/Content/css/materialize.min.css")
     @Styles.Render("~/Content/css/style.css")
     @Scripts.Render("~/Scripts/jquery-1.11.3.min.js")
+    @Scripts.Render("~/Scripts/jquery.dataTables.js")
     @Scripts.Render("~/Scripts/materialize.min.js")
     @Scripts.Render("~/Scripts/jDrink.js")
 </head>
@@ -36,7 +38,7 @@
                         <input type="file" id="pictureinput">
                     </div>
                     <div class="file-path-wrapper">
-                        <input class="file-path validate" type="text" placeholder="Upload a picture of the drink" >
+                        <input class="file-path validate" type="text" placeholder="Upload a picture of the drink">
                     </div>
                 </div>
             </div>
@@ -46,6 +48,28 @@
                         Register
                          <i class="material-icons"></i>
                     </button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <table id="drinkTable" class="display">
+                        <thead>
+                            <tr>
+                                <th>Photo</th>
+                                <th>Name</th>
+                                <th>Type</th>
+                                <th>Size</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Row 1 Data 2</td>
+                                <td>Row 1 Data 2</td>
+                                <td>Row 1 Data 2</td>
+                                <td>Row 1 Data 2</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </form>

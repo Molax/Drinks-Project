@@ -4,15 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DrinksProject.Dto
+namespace DrinksProject.ViewModel
 {
-    public class Drink
+    public class SelectAllDrinks
     {
         public int PK_DRINK { get; set; }
 
         public string NAME { get; set; }
 
-        public byte[] PHOTO { get; set; }
+        public string PHOTO { get; set; }
 
         public int FK_SIZE { get; set; }
 

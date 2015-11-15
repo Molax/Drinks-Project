@@ -39,6 +39,29 @@
         });
     },
 
+    selectAllDrinks: function () {
+        $.ajax({
+
+            url: 'api/Drink/SelectAllDrinks',
+            type: 'POST',
+            dataType: 'json',
+            success: function (data) {
+
+                $('#drinkTable').DataTable({
+                    data: data,
+                    columns: [
+                        { data: 'PHOTO' },
+                        { data: 'NAME' },
+                        { data: 'FK_TYPE' },
+                        { data: 'FK_SIZE' }
+                    ]
+                });
+
+                console.log(data)
+            }
+        });
+    },
+
     createDrink: function () {
 
         var x = $DrinkPicture;
@@ -71,7 +94,7 @@
             var fileReader = new FileReader();
 
             fileReader.onload = function (fileLoadedEvent) {
-            $DrinkPicture = fileLoadedEvent.target.result; // <--- data: base64
+                $DrinkPicture = fileLoadedEvent.target.result; // <--- data: base64
 
             }
             fileReader.readAsDataURL(fileToLoad);
@@ -101,9 +124,9 @@
 
         pageDrink.selecTypetDrinks();
 
+        pageDrink.selectAllDrinks();
+
         $("#pictureinput").bind("change", function () { pageDrink.getPictureToBase64() });
-
-
 
     }
 

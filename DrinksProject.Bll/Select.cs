@@ -41,5 +41,19 @@ namespace DrinksProject.Bll
 
             return AllTypes;
         }
+
+        public static List<ViewModel.SelectAllDrinks> SelectAllDrinks()
+        {
+            List<ViewModel.SelectAllDrinks> AllDrinks = new List<ViewModel.SelectAllDrinks>();
+
+            List<Dto.Drink> DrinkDTO = Dal.Drink.SelectAllDrinks();
+
+            foreach (var item in DrinkDTO)
+            {
+                AllDrinks.Add(new ViewModel.SelectAllDrinks { NAME = item.NAME, FK_SIZE = item.FK_SIZE, FK_TYPE = item.FK_TYPE, PHOTO = System.Text.Encoding.UTF8.GetString(item.PHOTO) });
+            }
+
+            return AllDrinks;
+        }
     }
 }

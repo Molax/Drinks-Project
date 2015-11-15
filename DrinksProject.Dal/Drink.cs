@@ -27,5 +27,20 @@ namespace DrinksProject.Dal
                 db.SubmitChanges();
             }
         }
+
+        public static List<Dto.Drink> SelectAllDrinks()
+        {
+            using (var db = new DrinkDataBaseDataContext())
+            {
+                return db.DRINKs.Select(c => new Dto.Drink { 
+                
+                    FK_SIZE = c.FK_SIZE,
+                    NAME = c.NAME,
+                    FK_TYPE = c.FK_TYPE,
+                    PHOTO = c.PHOTO.ToArray()
+
+                }).ToList();
+            }
+        }
     }
 }
