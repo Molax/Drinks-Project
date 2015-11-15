@@ -14,8 +14,8 @@ namespace DrinksProject.ViewModel
 
         public string PHOTO { get; set; }
 
-        public int FK_SIZE { get; set; }
+        public string TYPENAME { get; set; }
 
-        public int FK_TYPE { get; set; }
+        public string  SIZENAME { get; set; }
     }
 }

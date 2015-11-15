@@ -21,5 +21,18 @@ namespace DrinksProject.Dal
                 }).ToList();
             }
         }
+
+        public static Dto.Type GetTypeName(int Id)
+        {
+            using (var db = new DrinkDataBaseDataContext())
+            {
+                return db.TYPEs.Where(c => c.PK_TYPE == Id).Select(c=>new Dto.Type {
+
+                    PK_TYPE = c.PK_TYPE,
+                    NAME = c.NAME
+                
+                    }).FirstOrDefault();
+            }
+        }
     }
 }

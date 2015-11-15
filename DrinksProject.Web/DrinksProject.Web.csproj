@@ -273,6 +273,7 @@
     <Content Include="Images\background3.jpg" />
     <Content Include="Scripts\jDrink.js" />
     <Content Include="Scripts\jquery-1.11.3.min.js" />
+    <Content Include="Scripts\jquery.dataTables.js" />
     <Content Include="Scripts\materialize.min.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">

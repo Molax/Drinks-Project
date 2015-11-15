@@ -23,5 +23,18 @@ namespace DrinksProject.Dal
             }
         }
 
+
+        public static Dto.Size GetSizeName(int Id)
+        {
+            using (var db = new DrinkDataBaseDataContext())
+            {
+                return db.SIZEs.Where(c => c.PK_SIZE == Id).Select(c => new Dto.Size {
+                
+                    PK_SIZE = c.PK_SIZE,
+                    SIZETYPE = c.SIZETYPE
+                
+                }).FirstOrDefault();
+            }
+        }
     }
 }

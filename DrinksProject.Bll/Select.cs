@@ -50,7 +50,11 @@ namespace DrinksProject.Bll
 
             foreach (var item in DrinkDTO)
             {
-                AllDrinks.Add(new ViewModel.SelectAllDrinks { NAME = item.NAME, FK_SIZE = item.FK_SIZE, FK_TYPE = item.FK_TYPE, PHOTO = System.Text.Encoding.UTF8.GetString(item.PHOTO) });
+                Dto.Type TypeName = Dal.Type.GetTypeName(item.FK_TYPE);
+
+                Dto.Size SizeName = Dal.Size.GetSizeName(item.FK_SIZE);
+
+                AllDrinks.Add(new ViewModel.SelectAllDrinks { NAME = item.NAME, SIZENAME = SizeName.SIZETYPE , TYPENAME = TypeName.NAME, PHOTO = System.Text.Encoding.UTF8.GetString(item.PHOTO) });
             }
 
             return AllDrinks;

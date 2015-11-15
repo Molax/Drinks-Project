@@ -50,14 +50,12 @@
                 $('#drinkTable').DataTable({
                     data: data,
                     columns: [
-                        { data: 'PHOTO' },
                         { data: 'NAME' },
-                        { data: 'FK_TYPE' },
-                        { data: 'FK_SIZE' }
+                        { data: 'TYPENAME' },
+                        { data: 'SIZENAME' }
                     ]
                 });
 
-                console.log(data)
             }
         });
     },
@@ -78,8 +76,7 @@
                 "FK_TYPE": $('#typedrinkselect').val()
             },
             success: function (e) {
-
-                alert(e);
+                
             }
 
         });
@@ -124,7 +121,7 @@
 
         pageDrink.selecTypetDrinks();
 
-        pageDrink.selectAllDrinks();
+        setTimeout(function () { pageDrink.selectAllDrinks(); }, 300);
 
         $("#pictureinput").bind("change", function () { pageDrink.getPictureToBase64() });
 
