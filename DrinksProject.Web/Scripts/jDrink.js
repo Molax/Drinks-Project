@@ -50,7 +50,7 @@
             dataType: 'json',
             data: {
                 "NAME": $('#drinkname').val(),
-                "PHOTO": $DrinkPicture,
+                "PHOTOCODED": $DrinkPicture,
                 "FK_SIZE": $('#sizedrinkselect').val(),
                 "FK_TYPE": $('#typedrinkselect').val()
             },

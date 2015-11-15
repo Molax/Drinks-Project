@@ -12,7 +12,9 @@ namespace AppOnTime.Web.Controllers
         [HttpPost]
         public void CreateNewDrink(DrinksProject.ViewModel.CreateNewDrink Drink)
         {
-            byte[] bytes = Convert.FromBase64String(Drink.PHOTO);
+            Drink.PHOTO = System.Text.Encoding.UTF8.GetBytes(Drink.PHOTOCODED);
+
+            DrinksProject.Bll.Create.CreateNewDrink(Drink);
         }
     }
 }

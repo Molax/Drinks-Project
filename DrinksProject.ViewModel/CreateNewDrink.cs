@@ -8,14 +8,14 @@ namespace DrinksProject.ViewModel
 {
     public class CreateNewDrink
     {
-        public int PK_DINK { get; set; }
-
         public string NAME { get; set; }
 
-        public string PHOTO { get; set; }
+        public string PHOTOCODED { get; set; }
 
         public int FK_SIZE { get; set; }
 
         public int FK_TYPE { get; set; }
+
+        public byte[] PHOTO { get; set; }
     }
 }
