@@ -59,5 +59,20 @@ namespace DrinksProject.Bll
 
             return AllDrinks;
         }
+
+        public static ViewModel.GetNumberOfDrinksByType GetNumberOfDrinksByType(int type)
+        {
+            ViewModel.GetNumberOfDrinksByType DrinksPerType = new ViewModel.GetNumberOfDrinksByType();
+
+            DrinksPerType.Type1 = Dal.Type.GetNumberOfDrinksByType(1);
+
+            DrinksPerType.Type2 = Dal.Type.GetNumberOfDrinksByType(2);
+
+            DrinksPerType.Type3 = Dal.Type.GetNumberOfDrinksByType(3);
+
+            DrinksPerType.Type4 = Dal.Type.GetNumberOfDrinksByType(4);
+
+            return DrinksPerType;
+        }
     }
 }

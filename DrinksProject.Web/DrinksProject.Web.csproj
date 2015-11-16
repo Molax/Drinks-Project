@@ -271,6 +271,9 @@
     <Content Include="Images\background1.jpg" />
     <Content Include="Images\background2.jpg" />
     <Content Include="Images\background3.jpg" />
+    <Content Include="Scripts\exporting.js" />
+    <Content Include="Scripts\highcharts.js" />
+    <Content Include="Scripts\highcharts.src.js" />
     <Content Include="Scripts\jDrink.js" />
     <Content Include="Scripts\jquery-1.11.3.min.js" />
     <Content Include="Scripts\jquery.dataTables.js" />

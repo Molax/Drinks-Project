@@ -29,5 +29,11 @@ namespace AppOnTime.Web.Controllers
 
             return Drinks;
         }
+
+        [HttpPost]
+        public DrinksProject.ViewModel.GetNumberOfDrinksByType GetNumberOfDrinksByType()
+        {
+            return DrinksProject.Bll.Select.GetNumberOfDrinksByType(1);
+        }
     }
 }

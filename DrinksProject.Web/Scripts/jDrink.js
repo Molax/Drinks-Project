@@ -39,6 +39,66 @@
         });
     },
 
+    GetNumberOfDrinksByType: function () {
+        $.ajax({
+
+            url: 'api/Drink/GetNumberOfDrinksByType',
+            type: 'POST',
+            dataType: 'json',
+            success: function (data) {
+
+                $('#drinkChart').highcharts({
+                    chart: {
+                        plotBackgroundColor: null,
+                        plotBorderWidth: null,
+                        plotShadow: false,
+                        type: 'pie'
+                    },
+                    title: {
+                        text: 'Percentage of registered drinks per type'
+                    },
+                    tooltip: {
+                        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+                    },
+                    plotOptions: {
+                        pie: {
+                            allowPointSelect: true,
+                            cursor: 'pointer',
+                            dataLabels: {
+                                enabled: true,
+                                format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                                style: {
+                                    color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                                }
+                            }
+                        }
+                    },
+                    series: [{
+                        name: 'Brands',
+                        colorByPoint: true,
+                        data: [{
+                            name: 'Beer',
+                            y: data.Type2
+                        }, {
+                            name: 'Drink/Coquitel',
+                            y: data.Type1,
+                            sliced: true,
+                            selected: true
+                        }, {
+                            name: 'Wine and Others',
+                            y: data.Type3
+                        },
+                        {
+                            name: 'Destilled',
+                            y: data.Type4
+                        }]
+                    }]
+                });
+
+            }
+        });
+    },
+
     selectAllDrinks: function () {
         $.ajax({
 
@@ -79,9 +139,61 @@
                 "PRICE": $('#pricedrink').val()
             },
             success: function (e) {
-                
+
             }
 
+        });
+
+    },
+
+    getChartInfos: function () {
+
+        $('#drinkChart').highcharts({
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+            title: {
+                text: 'Percentage of registered drinks per type'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: true,
+                        format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                        style: {
+                            color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                        }
+                    }
+                }
+            },
+            series: [{
+                name: 'Brands',
+                colorByPoint: true,
+                data: [{
+                    name: 'Beer',
+                    y: 50
+                }, {
+                    name: 'Drink/Coquitel',
+                    y: 34,
+                    sliced: true,
+                    selected: true
+                }, {
+                    name: 'Wine and Others',
+                    y: 22
+                },
+                {
+                    name: 'Destilled',
+                    y: 4
+                }]
+            }]
         });
 
     },
@@ -124,7 +236,9 @@
 
         pageDrink.selecTypetDrinks();
 
-        setTimeout(function () { pageDrink.selectAllDrinks(); }, 300);
+        pageDrink.GetNumberOfDrinksByType();
+
+        setTimeout(function () { pageDrink.selectAllDrinks(); pageDrink.GetNumberOfDrinksByType(); }, 300);
 
         $("#pictureinput").bind("change", function () { pageDrink.getPictureToBase64() });
 

@@ -34,5 +34,13 @@ namespace DrinksProject.Dal
                     }).FirstOrDefault();
             }
         }
+
+        public static int GetNumberOfDrinksByType(int type)
+        {
+            using (var db = new DrinkDataBaseDataContext())
+            {
+                return db.DRINKs.Where(c => c.FK_TYPE== type).Count();
+            }
+        }
     }
 }
