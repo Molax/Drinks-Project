@@ -52,7 +52,8 @@
                     columns: [
                         { data: 'NAME' },
                         { data: 'TYPENAME' },
-                        { data: 'SIZENAME' }
+                        { data: 'SIZENAME' },
+                        { data: 'PRICE' }
                     ]
                 });
 
@@ -73,7 +74,8 @@
                 "NAME": $('#drinkname').val(),
                 "PHOTOCODED": $DrinkPicture,
                 "FK_SIZE": $('#sizedrinkselect').val(),
-                "FK_TYPE": $('#typedrinkselect').val()
+                "FK_TYPE": $('#typedrinkselect').val(),
+                "PRICE": $('#pricedrink').val()
             },
             success: function (e) {
                 

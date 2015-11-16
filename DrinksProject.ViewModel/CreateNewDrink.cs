@@ -17,5 +17,8 @@ namespace DrinksProject.ViewModel
         public int FK_TYPE { get; set; }
 
         public byte[] PHOTO { get; set; }
+
+        public string PRICE { get; set; }
+
     }
 }

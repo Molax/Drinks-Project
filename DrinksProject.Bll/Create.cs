@@ -16,7 +16,8 @@ namespace DrinksProject.Bll
                 FK_SIZE = Drink.FK_SIZE,
                 FK_TYPE = Drink.FK_TYPE,
                 NAME = Drink.NAME,
-                PHOTO = Drink.PHOTO
+                PHOTO = Drink.PHOTO,
+                PRICE = Drink.PRICE
 
             });
         }

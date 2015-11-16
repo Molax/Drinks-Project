@@ -19,7 +19,8 @@ namespace DrinksProject.Dal
                     FK_SIZE = drink.FK_SIZE,
                     NAME = drink.NAME,
                     FK_TYPE = drink.FK_TYPE,
-                    PHOTO = drink.PHOTO
+                    PHOTO = drink.PHOTO,
+                    PRICE = drink.PRICE
                 };
 
                 db.DRINKs.InsertOnSubmit(dbDrink);
@@ -37,7 +38,8 @@ namespace DrinksProject.Dal
                     FK_SIZE = c.FK_SIZE,
                     NAME = c.NAME,
                     FK_TYPE = c.FK_TYPE,
-                    PHOTO = c.PHOTO.ToArray()
+                    PHOTO = c.PHOTO.ToArray(),
+                    PRICE = c.PRICE
 
                 }).ToList();
             }

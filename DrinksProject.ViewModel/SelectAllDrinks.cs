@@ -17,5 +17,7 @@ namespace DrinksProject.ViewModel
         public string TYPENAME { get; set; }
 
         public string  SIZENAME { get; set; }
+
+        public string PRICE { get; set; }
     }
 }

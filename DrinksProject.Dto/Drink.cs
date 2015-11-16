@@ -17,5 +17,7 @@ namespace DrinksProject.Dto
         public int FK_SIZE { get; set; }
 
         public int FK_TYPE { get; set; }
+
+        public string PRICE { get; set; }
     }
 }

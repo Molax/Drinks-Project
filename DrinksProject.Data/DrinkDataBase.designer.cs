@@ -30,15 +30,15 @@ namespace DrinksProject.Data
 		
     #region Extensibility Method Definitions
     partial void OnCreated();
-    partial void InsertDRINK(DRINK instance);
-    partial void UpdateDRINK(DRINK instance);
-    partial void DeleteDRINK(DRINK instance);
     partial void InsertSIZE(SIZE instance);
     partial void UpdateSIZE(SIZE instance);
     partial void DeleteSIZE(SIZE instance);
     partial void InsertTYPE(TYPE instance);
     partial void UpdateTYPE(TYPE instance);
     partial void DeleteTYPE(TYPE instance);
+    partial void InsertDRINK(DRINK instance);
+    partial void UpdateDRINK(DRINK instance);
+    partial void DeleteDRINK(DRINK instance);
     #endregion
 		
 		public DrinkDataBaseDataContext() : 
@@ -71,14 +71,6 @@ namespace DrinksProject.Data
 			OnCreated();
 		}
 		
-		public System.Data.Linq.Table<DRINK> DRINKs
-		{
-			get
-			{
-				return this.GetTable<DRINK>();
-			}
-		}
-		
 		public System.Data.Linq.Table<SIZE> SIZEs
 		{
 			get
@@ -94,244 +86,12 @@ namespace DrinksProject.Data
 				return this.GetTable<TYPE>();
 			}
 		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.DRINK")]
-	public partial class DRINK : INotifyPropertyChanging, INotifyPropertyChanged
-	{
 		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private int _PK_DRINK;
-		
-		private string _NAME;
-		
-		private System.Data.Linq.Binary _PHOTO;
-		
-		private int _FK_SIZE;
-		
-		private int _FK_TYPE;
-		
-		private EntityRef<SIZE> _SIZE;
-		
-		private EntityRef<TYPE> _TYPE;
-		
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnPK_DRINKChanging(int value);
-    partial void OnPK_DRINKChanged();
-    partial void OnNAMEChanging(string value);
-    partial void OnNAMEChanged();
-    partial void OnPHOTOChanging(System.Data.Linq.Binary value);
-    partial void OnPHOTOChanged();
-    partial void OnFK_SIZEChanging(int value);
-    partial void OnFK_SIZEChanged();
-    partial void OnFK_TYPEChanging(int value);
-    partial void OnFK_TYPEChanged();
-    #endregion
-		
-		public DRINK()
-		{
-			this._SIZE = default(EntityRef<SIZE>);
-			this._TYPE = default(EntityRef<TYPE>);
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PK_DRINK", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public int PK_DRINK
+		public System.Data.Linq.Table<DRINK> DRINKs
 		{
 			get
 			{
-				return this._PK_DRINK;
-			}
-			set
-			{
-				if ((this._PK_DRINK != value))
-				{
-					this.OnPK_DRINKChanging(value);
-					this.SendPropertyChanging();
-					this._PK_DRINK = value;
-					this.SendPropertyChanged("PK_DRINK");
-					this.OnPK_DRINKChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NAME", DbType="VarChar(250) NOT NULL", CanBeNull=false)]
-		public string NAME
-		{
-			get
-			{
-				return this._NAME;
-			}
-			set
-			{
-				if ((this._NAME != value))
-				{
-					this.OnNAMEChanging(value);
-					this.SendPropertyChanging();
-					this._NAME = value;
-					this.SendPropertyChanged("NAME");
-					this.OnNAMEChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PHOTO", DbType="VarBinary(MAX) NOT NULL", CanBeNull=false, UpdateCheck=UpdateCheck.Never)]
-		public System.Data.Linq.Binary PHOTO
-		{
-			get
-			{
-				return this._PHOTO;
-			}
-			set
-			{
-				if ((this._PHOTO != value))
-				{
-					this.OnPHOTOChanging(value);
-					this.SendPropertyChanging();
-					this._PHOTO = value;
-					this.SendPropertyChanged("PHOTO");
-					this.OnPHOTOChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FK_SIZE", DbType="Int NOT NULL")]
-		public int FK_SIZE
-		{
-			get
-			{
-				return this._FK_SIZE;
-			}
-			set
-			{
-				if ((this._FK_SIZE != value))
-				{
-					if (this._SIZE.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
-					this.OnFK_SIZEChanging(value);
-					this.SendPropertyChanging();
-					this._FK_SIZE = value;
-					this.SendPropertyChanged("FK_SIZE");
-					this.OnFK_SIZEChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FK_TYPE", DbType="Int NOT NULL")]
-		public int FK_TYPE
-		{
-			get
-			{
-				return this._FK_TYPE;
-			}
-			set
-			{
-				if ((this._FK_TYPE != value))
-				{
-					if (this._TYPE.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
-					this.OnFK_TYPEChanging(value);
-					this.SendPropertyChanging();
-					this._FK_TYPE = value;
-					this.SendPropertyChanged("FK_TYPE");
-					this.OnFK_TYPEChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="SIZE_DRINK", Storage="_SIZE", ThisKey="FK_SIZE", OtherKey="PK_SIZE", IsForeignKey=true)]
-		public SIZE SIZE
-		{
-			get
-			{
-				return this._SIZE.Entity;
-			}
-			set
-			{
-				SIZE previousValue = this._SIZE.Entity;
-				if (((previousValue != value) 
-							|| (this._SIZE.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._SIZE.Entity = null;
-						previousValue.DRINKs.Remove(this);
-					}
-					this._SIZE.Entity = value;
-					if ((value != null))
-					{
-						value.DRINKs.Add(this);
-						this._FK_SIZE = value.PK_SIZE;
-					}
-					else
-					{
-						this._FK_SIZE = default(int);
-					}
-					this.SendPropertyChanged("SIZE");
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="TYPE_DRINK", Storage="_TYPE", ThisKey="FK_TYPE", OtherKey="PK_TYPE", IsForeignKey=true)]
-		public TYPE TYPE
-		{
-			get
-			{
-				return this._TYPE.Entity;
-			}
-			set
-			{
-				TYPE previousValue = this._TYPE.Entity;
-				if (((previousValue != value) 
-							|| (this._TYPE.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._TYPE.Entity = null;
-						previousValue.DRINKs.Remove(this);
-					}
-					this._TYPE.Entity = value;
-					if ((value != null))
-					{
-						value.DRINKs.Add(this);
-						this._FK_TYPE = value.PK_TYPE;
-					}
-					else
-					{
-						this._FK_TYPE = default(int);
-					}
-					this.SendPropertyChanged("TYPE");
-				}
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+				return this.GetTable<DRINK>();
 			}
 		}
 	}
@@ -561,6 +321,270 @@ namespace DrinksProject.Data
 		{
 			this.SendPropertyChanging();
 			entity.TYPE = null;
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.DRINK")]
+	public partial class DRINK : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _PK_DRINK;
+		
+		private string _NAME;
+		
+		private System.Data.Linq.Binary _PHOTO;
+		
+		private int _FK_SIZE;
+		
+		private int _FK_TYPE;
+		
+		private string _PRICE;
+		
+		private EntityRef<SIZE> _SIZE;
+		
+		private EntityRef<TYPE> _TYPE;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnPK_DRINKChanging(int value);
+    partial void OnPK_DRINKChanged();
+    partial void OnNAMEChanging(string value);
+    partial void OnNAMEChanged();
+    partial void OnPHOTOChanging(System.Data.Linq.Binary value);
+    partial void OnPHOTOChanged();
+    partial void OnFK_SIZEChanging(int value);
+    partial void OnFK_SIZEChanged();
+    partial void OnFK_TYPEChanging(int value);
+    partial void OnFK_TYPEChanged();
+    partial void OnPRICEChanging(string value);
+    partial void OnPRICEChanged();
+    #endregion
+		
+		public DRINK()
+		{
+			this._SIZE = default(EntityRef<SIZE>);
+			this._TYPE = default(EntityRef<TYPE>);
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PK_DRINK", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int PK_DRINK
+		{
+			get
+			{
+				return this._PK_DRINK;
+			}
+			set
+			{
+				if ((this._PK_DRINK != value))
+				{
+					this.OnPK_DRINKChanging(value);
+					this.SendPropertyChanging();
+					this._PK_DRINK = value;
+					this.SendPropertyChanged("PK_DRINK");
+					this.OnPK_DRINKChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NAME", DbType="VarChar(250) NOT NULL", CanBeNull=false)]
+		public string NAME
+		{
+			get
+			{
+				return this._NAME;
+			}
+			set
+			{
+				if ((this._NAME != value))
+				{
+					this.OnNAMEChanging(value);
+					this.SendPropertyChanging();
+					this._NAME = value;
+					this.SendPropertyChanged("NAME");
+					this.OnNAMEChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PHOTO", DbType="VarBinary(MAX) NOT NULL", CanBeNull=false, UpdateCheck=UpdateCheck.Never)]
+		public System.Data.Linq.Binary PHOTO
+		{
+			get
+			{
+				return this._PHOTO;
+			}
+			set
+			{
+				if ((this._PHOTO != value))
+				{
+					this.OnPHOTOChanging(value);
+					this.SendPropertyChanging();
+					this._PHOTO = value;
+					this.SendPropertyChanged("PHOTO");
+					this.OnPHOTOChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FK_SIZE", DbType="Int NOT NULL")]
+		public int FK_SIZE
+		{
+			get
+			{
+				return this._FK_SIZE;
+			}
+			set
+			{
+				if ((this._FK_SIZE != value))
+				{
+					if (this._SIZE.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.OnFK_SIZEChanging(value);
+					this.SendPropertyChanging();
+					this._FK_SIZE = value;
+					this.SendPropertyChanged("FK_SIZE");
+					this.OnFK_SIZEChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FK_TYPE", DbType="Int NOT NULL")]
+		public int FK_TYPE
+		{
+			get
+			{
+				return this._FK_TYPE;
+			}
+			set
+			{
+				if ((this._FK_TYPE != value))
+				{
+					if (this._TYPE.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.OnFK_TYPEChanging(value);
+					this.SendPropertyChanging();
+					this._FK_TYPE = value;
+					this.SendPropertyChanged("FK_TYPE");
+					this.OnFK_TYPEChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PRICE", DbType="VarChar(50) NOT NULL", CanBeNull=false)]
+		public string PRICE
+		{
+			get
+			{
+				return this._PRICE;
+			}
+			set
+			{
+				if ((this._PRICE != value))
+				{
+					this.OnPRICEChanging(value);
+					this.SendPropertyChanging();
+					this._PRICE = value;
+					this.SendPropertyChanged("PRICE");
+					this.OnPRICEChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="SIZE_DRINK", Storage="_SIZE", ThisKey="FK_SIZE", OtherKey="PK_SIZE", IsForeignKey=true)]
+		public SIZE SIZE
+		{
+			get
+			{
+				return this._SIZE.Entity;
+			}
+			set
+			{
+				SIZE previousValue = this._SIZE.Entity;
+				if (((previousValue != value) 
+							|| (this._SIZE.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._SIZE.Entity = null;
+						previousValue.DRINKs.Remove(this);
+					}
+					this._SIZE.Entity = value;
+					if ((value != null))
+					{
+						value.DRINKs.Add(this);
+						this._FK_SIZE = value.PK_SIZE;
+					}
+					else
+					{
+						this._FK_SIZE = default(int);
+					}
+					this.SendPropertyChanged("SIZE");
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="TYPE_DRINK", Storage="_TYPE", ThisKey="FK_TYPE", OtherKey="PK_TYPE", IsForeignKey=true)]
+		public TYPE TYPE
+		{
+			get
+			{
+				return this._TYPE.Entity;
+			}
+			set
+			{
+				TYPE previousValue = this._TYPE.Entity;
+				if (((previousValue != value) 
+							|| (this._TYPE.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._TYPE.Entity = null;
+						previousValue.DRINKs.Remove(this);
+					}
+					this._TYPE.Entity = value;
+					if ((value != null))
+					{
+						value.DRINKs.Add(this);
+						this._FK_TYPE = value.PK_TYPE;
+					}
+					else
+					{
+						this._FK_TYPE = default(int);
+					}
+					this.SendPropertyChanged("TYPE");
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
 		}
 	}
 }

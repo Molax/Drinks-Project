@@ -1,16 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="DrinksDb" Class="DrinkDataBaseDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
   <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-L7A4397;Initial Catalog=DrinksDb;Integrated Security=True" SettingsObjectName="DrinksProject.Data.Properties.Settings" SettingsPropertyName="DrinksDbConnectionString" Provider="System.Data.SqlClient" />
-  <Table Name="dbo.DRINK" Member="DRINKs">
-    <Type Name="DRINK">
-      <Column Name="PK_DRINK" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="NAME" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
-      <Column Name="PHOTO" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
-      <Column Name="FK_SIZE" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="FK_TYPE" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Association Name="SIZE_DRINK" Member="SIZE" ThisKey="FK_SIZE" OtherKey="PK_SIZE" Type="SIZE" IsForeignKey="true" />
-      <Association Name="TYPE_DRINK" Member="TYPE" ThisKey="FK_TYPE" OtherKey="PK_TYPE" Type="TYPE" IsForeignKey="true" />
-    </Type>
-  </Table>
   <Table Name="dbo.SIZE" Member="SIZEs">
     <Type Name="SIZE">
       <Column Name="PK_SIZE" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
@@ -23,6 +12,18 @@
       <Column Name="PK_TYPE" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
       <Column Name="NAME" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
       <Association Name="TYPE_DRINK" Member="DRINKs" ThisKey="PK_TYPE" OtherKey="FK_TYPE" Type="DRINK" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DRINK" Member="DRINKs">
+    <Type Name="DRINK">
+      <Column Name="PK_DRINK" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NAME" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="PHOTO" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="FK_SIZE" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FK_TYPE" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PRICE" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="SIZE_DRINK" Member="SIZE" ThisKey="FK_SIZE" OtherKey="PK_SIZE" Type="SIZE" IsForeignKey="true" />
+      <Association Name="TYPE_DRINK" Member="TYPE" ThisKey="FK_TYPE" OtherKey="PK_TYPE" Type="TYPE" IsForeignKey="true" />
     </Type>
   </Table>
 </Database>
