@@ -50,6 +50,7 @@
                 $('#drinkTable').DataTable({
                     data: data,
                     columns: [
+                        { data: 'PHOTO' },
                         { data: 'NAME' },
                         { data: 'TYPENAME' },
                         { data: 'SIZENAME' },

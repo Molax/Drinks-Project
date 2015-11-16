@@ -22,6 +22,11 @@ namespace AppOnTime.Web.Controllers
         {
             List<DrinksProject.ViewModel.SelectAllDrinks> Drinks =  DrinksProject.Bll.Select.SelectAllDrinks();
 
+            foreach (var item in Drinks)
+            {
+                item.PHOTO = String.Format("<div align=center><img src='{0}' width='50' vspace='5'></div>", item.PHOTO);
+            }
+
             return Drinks;
         }
     }

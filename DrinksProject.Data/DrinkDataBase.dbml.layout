@@ -14,24 +14,24 @@
         <elementListCompartment Id="c8609ac8-d1ba-4ffe-890d-68cf41fd6c5d" absoluteBounds="6.89, 3.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="53793ece-7562-44ba-a802-c9f75945bc00" absoluteBounds="0.875, 1.5, 2, 1.9631982421875">
+    <classShape Id="4261183c-cccb-4195-a3c0-bcff0e244e8d" absoluteBounds="1.625, 2, 2, 1.9631982421875">
       <DataClassMoniker Name="/DrinkDataBaseDataContext/DRINK" />
       <nestedChildShapes>
-        <elementListCompartment Id="2307990c-dec8-425b-b974-7cbdd88c5c3a" absoluteBounds="0.89000000000000012, 1.96, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="02bf453e-c122-4e75-97df-4c2441a28aaf" absoluteBounds="1.6400000000000001, 2.46, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(3.8750005 : 3.875); (3.8750005 : 2.48159912109375); (2.875 : 2.48159912109375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(2.875 : 4.51609587760417); (2.2499995 : 4.51609587760417); (2.2499995 : 3.9631982421875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
       <AssociationMoniker Name="/DrinkDataBaseDataContext/SIZE/SIZE_DRINK" />
       <nodes>
         <classShapeMoniker Id="106c807d-8d2b-47c3-96a4-bae708e80e36" />
-        <classShapeMoniker Id="53793ece-7562-44ba-a802-c9f75945bc00" />
+        <classShapeMoniker Id="4261183c-cccb-4195-a3c0-bcff0e244e8d" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(6.875 : 3.16909912109375); (3.95833383333333 : 3.16909912109375 : JumpStart); (3.79166716666667 : 3.16909912109375 : JumpEnd); (2.875 : 3.16909912109375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(6.875 : 3.34375); (3.625 : 3.34375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
       <AssociationMoniker Name="/DrinkDataBaseDataContext/TYPE/TYPE_DRINK" />
       <nodes>
         <classShapeMoniker Id="c6032227-515a-47e5-b574-051ec36d45b5" />
-        <classShapeMoniker Id="53793ece-7562-44ba-a802-c9f75945bc00" />
+        <classShapeMoniker Id="4261183c-cccb-4195-a3c0-bcff0e244e8d" />
       </nodes>
     </associationConnector>
   </nestedChildShapes>
