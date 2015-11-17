@@ -10,11 +10,15 @@ namespace AppOnTime.Web.Controllers
     public class DrinkController : ApiController
     {
         [HttpPost]
-        public void CreateNewDrink(DrinksProject.ViewModel.CreateNewDrink Drink)
+        public HttpResponseMessage CreateNewDrink(DrinksProject.ViewModel.CreateNewDrink Drink)
         {
             Drink.PHOTO = System.Text.Encoding.UTF8.GetBytes(Drink.PHOTOCODED);
 
             DrinksProject.Bll.Create.CreateNewDrink(Drink);
+
+            return Request.CreateResponse(HttpStatusCode.OK, "Adicionado com sucesso");
+
+           
         }
 
         [HttpPost]

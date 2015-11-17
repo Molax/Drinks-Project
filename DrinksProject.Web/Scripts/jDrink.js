@@ -144,10 +144,10 @@
                 "PRICE": $('#pricedrink').val()
             },
             success: function (e) {
-                
+                console.log(e);
             },
             error: function (e) {
-               
+                console.log(e);
             }
 
         });
