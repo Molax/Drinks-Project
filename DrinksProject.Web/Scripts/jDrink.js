@@ -139,7 +139,7 @@
                 "PRICE": $('#pricedrink').val()
             },
             success: function (e) {
-
+                location.reload();
             }
 
         });

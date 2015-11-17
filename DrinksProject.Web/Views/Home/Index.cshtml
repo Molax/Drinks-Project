@@ -1,19 +1,8 @@
-﻿<!DOCTYPE html>
+﻿@{
+    ViewBag.Title = "Drinks Project - Home";
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+}
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Drink's Project</title>
-    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.10/css/jquery.dataTables.css">
-    @Styles.Render("~/Content/css/materialize.min.css")
-    @Styles.Render("~/Content/css/style.css")
-    @Scripts.Render("~/Scripts/jquery-1.11.3.min.js")
-    @Scripts.Render("~/Scripts/jquery.dataTables.js")
-    @Scripts.Render("~/Scripts/materialize.min.js")
-    @Scripts.Render("~/Scripts/highcharts.js")
-    @Scripts.Render("~/Scripts/exporting.js")
-    @Scripts.Render("~/Scripts/jDrink.js")
-</head>
 <body>
     <div class="content">
         <div class="row">
@@ -86,4 +75,4 @@
         <div id="drinkChart" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
     </div>
 </body>
-</html>
+

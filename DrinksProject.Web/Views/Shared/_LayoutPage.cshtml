@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Drink's Project</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.10/css/jquery.dataTables.css">
+    @Styles.Render("~/Content/css/materialize.min.css")
+    @Styles.Render("~/Content/css/style.css")
+    @Scripts.Render("~/Scripts/jquery-1.11.3.min.js")
+    @Scripts.Render("~/Scripts/jquery.dataTables.js")
+    @Scripts.Render("~/Scripts/materialize.min.js")
+    @Scripts.Render("~/Scripts/highcharts.js")
+    @Scripts.Render("~/Scripts/exporting.js")
+    @Scripts.Render("~/Scripts/jDrink.js")
+</head>
+<body>
+    <nav class="light-blue lighten-1" role="navigation">
+        <div class="nav-wrapper container">
+            <a id="logo-container" href="#" class="brand-logo">Drink's Project</a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="/">Register</a></li>
+            </ul>
+
+            <ul id="nav-mobile" class="side-nav">
+                <li><a href="/">Register</a></li>
+            </ul>
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+        </div>
+    </nav>
+    @RenderBody()
+    <footer class="page-footer teal">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">The Drink's Project</h5>
+                    <p class="grey-text text-lighten-4">A simple project that register drinks, shows them in a list and make some graphics about all the data</p>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                Made by <a class="brown-text text-lighten-3" href="https://github.com/Molax">João Paulo Amorim</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
