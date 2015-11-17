@@ -39,7 +39,8 @@ namespace DrinksProject.Dal
                     NAME = c.NAME,
                     FK_TYPE = c.FK_TYPE,
                     PHOTO = c.PHOTO.ToArray(),
-                    PRICE = c.PRICE
+                    PRICE = c.PRICE,
+                    PK_DRINK = c.PK_DRINK
 
                 }).ToList();
             }

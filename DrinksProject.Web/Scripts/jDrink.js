@@ -108,8 +108,13 @@
             success: function (data) {
 
                 $('#drinkTable').DataTable({
+                    "bScrollInfinite": true,
+                    "bScrollCollapse": true,
+                    "sScrollY": "500px",
+                    "bPaginate": false,
                     data: data,
                     columns: [
+                        { data: 'PK_DRINK' },
                         { data: 'PHOTO' },
                         { data: 'NAME' },
                         { data: 'TYPENAME' },
@@ -139,7 +144,10 @@
                 "PRICE": $('#pricedrink').val()
             },
             success: function (e) {
-                location.reload();
+                
+            },
+            error: function (e) {
+               
             }
 
         });

@@ -54,7 +54,7 @@ namespace DrinksProject.Bll
 
                 Dto.Size SizeName = Dal.Size.GetSizeName(item.FK_SIZE);
 
-                AllDrinks.Add(new ViewModel.SelectAllDrinks { NAME = item.NAME, SIZENAME = SizeName.SIZETYPE , TYPENAME = TypeName.NAME, PHOTO = System.Text.Encoding.UTF8.GetString(item.PHOTO), PRICE = item.PRICE });
+                AllDrinks.Add(new ViewModel.SelectAllDrinks { NAME = item.NAME, SIZENAME = SizeName.SIZETYPE , TYPENAME = TypeName.NAME, PHOTO = System.Text.Encoding.UTF8.GetString(item.PHOTO), PRICE = item.PRICE, PK_DRINK = item.PK_DRINK });
             }
 
             return AllDrinks;
