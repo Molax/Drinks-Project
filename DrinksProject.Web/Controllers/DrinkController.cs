@@ -12,13 +12,22 @@ namespace AppOnTime.Web.Controllers
         [HttpPost]
         public HttpResponseMessage CreateNewDrink(DrinksProject.ViewModel.CreateNewDrink Drink)
         {
-            Drink.PHOTO = System.Text.Encoding.UTF8.GetBytes(Drink.PHOTOCODED);
 
-            DrinksProject.Bll.Create.CreateNewDrink(Drink);
+            try
+            {
+                Drink.PHOTO = System.Text.Encoding.UTF8.GetBytes(Drink.PHOTOCODED);
 
-            return Request.CreateResponse(HttpStatusCode.OK, "Adicionado com sucesso");
+                DrinksProject.Bll.Create.CreateNewDrink(Drink);
 
-           
+                return Request.CreateResponse(HttpStatusCode.OK, "Drink Created");
+            }
+            catch (Exception)
+            {
+
+                return Request.CreateResponse(HttpStatusCode.BadRequest, "Error");
+                
+            }
+            
         }
 
         [HttpPost]

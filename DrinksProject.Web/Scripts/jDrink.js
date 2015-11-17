@@ -144,10 +144,14 @@
                 "PRICE": $('#pricedrink').val()
             },
             success: function (e) {
-                console.log(e);
+                var $toastContent = e;
+                Materialize.toast($toastContent, 2000);
+
+                setTimeout(function () { location.reload(); },2000);
             },
             error: function (e) {
-                console.log(e);
+                var $toastContent = e;
+                Materialize.toast($toastContent, 3000);
             }
 
         });
@@ -239,6 +243,8 @@
         pageDrink.config();
 
         $('select').material_select();
+
+        $('.tooltipped').tooltip({ delay: 50 });
 
         pageDrink.selecSizetDrinks();
 
